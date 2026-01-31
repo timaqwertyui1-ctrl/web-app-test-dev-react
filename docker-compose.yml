@@ -13,7 +13,11 @@ services:
       - frontend
     networks:
       - dev
-    
+  
+  environment:
+    build: .
+    env_file:
+      - .env
 
   backend:
     build: 
